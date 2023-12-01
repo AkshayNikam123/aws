@@ -1,0 +1,12 @@
+
+after configuring ec2 through putty app
+sudo yum update -y
+sudo yum install -y python3
+sudo pip3 install flask
+python3 app.py
+copy ipv4 dns url and above :port you give in app.py
+---not able to reach server even after running app
+then 
+change the security of instance ,change inbound rule add rule - all traffice ,ipv4 and save
+
+now we will be able to reach 

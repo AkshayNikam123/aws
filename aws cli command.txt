@@ -1,0 +1,28 @@
+aws configure #to configure aws any user to local
+aws --version #to check aws cli installed or not
+aws s3 ls
+
+cd anyfolderxyz
+
+xyz> aws s3 cp abcfile s3://bucketname   #to copy files from xyz folder i.e abc file to s3
+xyz aws s3 sync . s3://bucketname        #sync whole folder
+
+
+aws ec2 describe-instances
+error give user a permission policy of ec2 acces
+
+again
+aws ec2 describe-instances
+
+aws ec2 start-instances --instance-ids copyinstance id 
+
+aws ec2 stop-instances --instance-ids copyinstance id
+
+aws ec2 describe-volumes
+
+aws iam create-user --user-name nikam
+access denied change user permission( which we have onfigured in cli)  - Iam user full access so it will help to create new user
+
+aws iam create-login-profile --user-name MyUser --password My!User1Login8P@ssword   #to set password to user 
+
+aws iam attach-user-policy --user-name MyUser --policy-arn $POLICYARN  #to attach policy to user 
